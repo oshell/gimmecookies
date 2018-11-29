@@ -1,0 +1,25 @@
+$roofColor: #DD7E6B;
+
+.bbox{
+  height: 25vh;
+  border: 5px solid red;
+}
+
+#roof {
+  padding: 0;
+  .roof{
+    height: 100%;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+
+    &.left{
+      float: left;
+      background: linear-gradient(to left top, $roofColor 0%, $roofColor 50%, transparent 50%);
+    }
+    &.right{
+      background: linear-gradient(to right top, $roofColor 0%, $roofColor 50%, transparent 50%);
+      float:right;
+    }
+  }
+}
