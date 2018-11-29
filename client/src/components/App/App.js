@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Roof from '../Roof/Roof';
 import './App.scss';
 
 class App extends Component {
@@ -20,10 +21,7 @@ class App extends Component {
           <div class="col-3 bbox">
             One of three columns
           </div>
-          <div class="col-6 bbox" id="roof">
-            <div class="roof left"></div>
-            <div class="roof right"></div>
-          </div>
+          <Roof />
           <div class="col-3 bbox">
             One of three columns
           </div>
