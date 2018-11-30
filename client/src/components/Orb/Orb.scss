@@ -1,7 +1,79 @@
-#orb{
-  margin: 10vh auto 0;
-  width: 80%;
-  height: 50%;
-  background: #FFFF00;
-  border-radius: 50%;
+$moon: #FCFCFC;
+$shadow:#E7E7E7;
+$craters: #E3E4E5;
+$cratersShadow: #cecece;
+$glow: #b2dcf3;
+
+
+.day{
+  #orb{
+    margin: 10vh auto 0;
+    width: 80%;
+    height: 50%;
+    background: #FEF98E;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0px 0px 40px #FFFDDA;
+  }
+}
+
+.night{
+  #orb{
+    background-color: $moon;
+    box-shadow: inset -8px -7px 2px 0px $shadow;
+    border-radius: 50%;
+    left: 50%;
+    position: relative;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50%;
+
+    &::before{
+      @extend #orb;
+      content: ' ';
+      position: absolute;
+    }
+  }
+
+  .craters-top{
+    background-color: $craters;
+    border-radius: 50%;
+    box-shadow: inset -3px -1px 2px 0px $cratersShadow;
+    height: 15px;
+    left: 20px;
+    position: relative;
+    top: 20px;
+    width: 15px;
+
+    &:before{
+      @extend .craters-top;
+      content: '';
+      height: 10px;
+      left: 20px;
+      position: absolute;
+      top:-2px;
+      width: 10px;
+    }
+    &:after{
+      @extend .craters-top;
+      content: '';
+      height: 8px;
+      left: -10px;
+      position: absolute;
+      top: 15px;
+      width: 8px;
+    }
+  }
+
+  .craters-bottom{
+    @extend .craters-top;
+    left:55px;
+    top:40px;
+    &:before{
+      @extend .craters-bottom;
+      left: 15px;
+      top: -10px;
+    }
+  }
 }

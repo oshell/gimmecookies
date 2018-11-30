@@ -5,8 +5,8 @@ class Mailbox extends Component {
   render() {
     return(
       <div id="mailbox">
-        <div class="slot"></div>
-        <div class="label">Mailbox</div>
+        <div className="slot"></div>
+        <div className="label">Mailbox</div>
       </div>
     );
   }

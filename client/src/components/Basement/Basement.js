@@ -7,7 +7,7 @@ import Mailbox from '../Mailbox/Mailbox';
 class Basement extends Component {
   render() {
     return(
-      <div className="col-10 col-sm-6 bbox" id='basement'>
+      <div className="col-10 col-sm-6" id='basement'>
         <div className="row">
           <div className="col-4">
             <Window />

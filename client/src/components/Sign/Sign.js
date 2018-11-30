@@ -5,13 +5,13 @@ class Sign extends Component {
   render() {
     return(
       <div className="row">
-        <div class="col-3"></div>
-        <div class="col-6">
+        <div className="col-3"></div>
+        <div className="col-6">
           <div id="sign">
             Cookie Bakery
           </div>
         </div>
-        <div class="col-3"></div>
+        <div className="col-3"></div>
       </div>
     );
   }

@@ -5,10 +5,10 @@ import './Roof.scss';
 class Roof extends Component {
   render() {
     return(
-      <div class="col-10 col-sm-6 bbox" id="roof">
+      <div className="col-10 col-sm-6 bbox" id="roof">
         <Sign />
-        <div class="roof left"></div>
-        <div class="roof right"></div>
+        <div className="roof left"></div>
+        <div className="roof right"></div>
       </div>
     );
   }

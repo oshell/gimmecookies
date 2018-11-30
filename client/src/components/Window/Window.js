@@ -24,9 +24,9 @@ class Window extends Component {
         <div className={cardClass}
           onMouseEnter={this.handleHover}
           onMouseLeave={this.handleHover}>
-          <div class="card-face window">
+          <div className="card-face window">
           </div>
-          <div class="card-face cookie">
+          <div className="card-face cookie">
           </div>
         </div>
       </div>
