@@ -8,6 +8,8 @@ responsive little cookie bakery
   - you cannot order cookies at night
   - please don't use the mailbox
 
+![cookie bakerie gif](https://media.giphy.com/media/3eRwlVErHTxNnagg6Q/giphy.gif)
+
 ## Installation
 
 ### requires PHP7 - Installation Debian 8 (Jessie)
