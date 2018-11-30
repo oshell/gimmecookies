@@ -10,13 +10,13 @@ class Basement extends Component {
       <div className="col-10 col-sm-6" id='basement'>
         <div className="row">
           <div className="col-4">
-            <Window />
+            <Window lightsOn={this.props.lightsOn} />
           </div>
           <div className="col-4" id="door-wrapper">
-            <Door />
+            <Door orderCookie={this.props.orderCookie} />
           </div>
           <div className="col-4">
-            <Window />
+            <Window lightsOn={this.props.lightsOn} />
             <Mailbox />
           </div>
         </div>

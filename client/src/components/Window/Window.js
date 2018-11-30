@@ -11,9 +11,11 @@ class Window extends Component {
   }
 
   handleHover(){
-    this.setState({
-      flipped: !this.state.flipped
-    });
+    if (this.props.lightsOn) {
+      this.setState({
+        flipped: !this.state.flipped
+      });
+    }
   }
 
   render() {

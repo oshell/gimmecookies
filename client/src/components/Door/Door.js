@@ -4,7 +4,7 @@ import './Door.scss';
 class Door extends Component {
   render() {
     return(
-      <div id="door">
+      <div id="door" onClick={this.props.orderCookie} >
         <div id="handle"></div>
       </div>
     );

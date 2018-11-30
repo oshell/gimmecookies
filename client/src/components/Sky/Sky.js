@@ -3,22 +3,8 @@ import Orb from '../Orb/Orb';
 import './Sky.scss';
 
 class Sky extends Component {
-  constructor(){
-    super();
-    this.state = {
-      night: false
-    }
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(){
-    this.setState({
-      night: !this.state.night
-    });
-  }
-
   render() {
-    let bgClass = this.state.night ? 'night' : 'day';
+    let bgClass = this.props.lightsOn ? 'day' : 'night';
 
     return(
       <div className="col-10 col-sm-6">
@@ -28,7 +14,7 @@ class Sky extends Component {
             <div className="x2"><div className="cloud"></div></div>
             <div className="x3"><div className="cloud"></div></div>
           </div>
-          <Orb handleClick={this.handleClick} />
+          <Orb handleClick={this.props.handleClick} />
         </div>
       </div>
     );
