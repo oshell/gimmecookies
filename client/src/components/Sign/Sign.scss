@@ -1,0 +1,37 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+#sign{
+  z-index: 1;
+  position: absolute;
+  margin: 0 0 -15px 0;
+  top: 25vh;
+  background-color: #93C47D;
+  color: #274E13;
+  text-align: center;
+  font-weight: bold;
+  border: 3px solid #6FAC55;
+  text-transform: uppercase;
+  width: 90%;
+
+  padding: 13px 10px;
+  font-size: 13px;
+  height: 46px;
+
+  @media (min-width: 768) {
+    padding: 13px 20px;
+    font-size: 15px;
+    height: 50px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 13px 20px;
+    font-size: 20px;
+    height: 60px;
+  }
+}
